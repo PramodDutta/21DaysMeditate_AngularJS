@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MainApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Route Example</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/libs/angular.js" type="application/javascript"></script>
+    <script src="js/libs/angular-route.js" type="application/javascript"></script>
+    <script src="js/libs/angular-resource.js" type="application/javascript"></script>
+
+
+</head>
+<body>
+<div ng-controller="MainController">
+    <nav class="navbar navbar-default">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="#">Meditation Challenge</a>
+            </div>
+
+            <ui class="nav navbar-nav">
+                <li><a href="#/main">Home</a></li>
+                <li><a href="#/med">Meditation</a></li>
+                <li><a href="#/con">Profile</a></li>
+                <li><a href="#/med2">Task</a></li>
+
+
+            </ui>
+
+        </div>
+    </nav>
+    <div ng-view>
+    </div>
+
+
+    <script src="js/mainscript.js" type="application/javascript"></script>
+
+</div>
+
+<footer class="footer footertext">
+
+    <p style="margin: 9px">© 2016 SevaPord, Inc.</p>
+</footer>
+
+</body>
+</html>
